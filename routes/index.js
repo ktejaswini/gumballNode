@@ -4,7 +4,7 @@ var router = express.Router();
 
 // Homepage
 router.get('/', function(req, res) {
-	var output = http.request("http://life.cfapps.io/api/gumball", function(response) {
+	var output = http.request("http://sadhanapo.cfapps.io/api/gumball", function(response) {
 		response.on('data', function (chunck) {
 			console.log(chunck);
 			res.render('index', { title: chunck });
@@ -16,7 +16,7 @@ router.get('/', function(req, res) {
 //Turn the crank
 router.get('/turn', function(req, res) {
 	var optionsget = {
-    	host : 'life.cfapps.io',
+    	host : 'sadhanapo.cfapps.io',
     	port : '80',
     	path : '/api/gumball/turn',
     	method : 'PUT' 
@@ -33,7 +33,7 @@ router.get('/turn', function(req, res) {
 //Insert a quarter
 router.get('/insrt', function(req, res) {
 	var optionsget = {
-    	host : 'life.cfapps.io',
+    	host : 'sadhanapo.cfapps.io',
     	port : '80',
     	path : '/api/gumball/insrt',
     	method : 'PUT' 
