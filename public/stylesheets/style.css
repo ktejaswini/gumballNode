@@ -5,5 +5,12 @@ body {
 }
 
 a {
+  text-align: center;
   color: #00B7FF;
+}
+p{
+  text-align: center;
+}
+h1{
+  text-align: center;
 }
